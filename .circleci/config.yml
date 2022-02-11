@@ -40,10 +40,10 @@ jobs:
 workflows:
   monWorkflow:
     jobs:
-      - cheackout_and_unit_test
+      - checkout_and_unit_test
       - deploy_backend:
           requires:
-            - cheackout_and_unit_test
+            - checkout_and_unit_test
       - integration_tests_backend:
           requires:
             - deploy_backend
