@@ -38,7 +38,7 @@ jobs:
     steps:
       - run: echo "Hello World!"
 workflows:
-  build:
+  monWorkflow:
     jobs:
       - cheackout_and_unit_test
       - deploy_backend:
